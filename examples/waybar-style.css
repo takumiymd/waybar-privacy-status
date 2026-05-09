@@ -1,0 +1,60 @@
+@define-color nejen_red #b35461;
+
+/* Privacy module base */
+#custom-privacy-status {
+  background: transparent;
+  border: 1px solid transparent;
+  box-shadow: none;
+
+  padding: 0 8px;
+  margin: 0 4px;
+
+  border-radius: 8px;
+
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Mic off / camera off */
+#custom-privacy-status.privacy-alert,
+#custom-privacy-status.mic-off,
+#custom-privacy-status.cam-off {
+  color: @nejen_red;
+  border-color: rgba(179, 84, 97, 0.65);
+  background: rgba(179, 84, 97, 0.08);
+
+  text-shadow:
+    0 0 5px rgba(179, 84, 97, 0.55),
+    0 0 14px rgba(179, 84, 97, 0.25);
+
+  box-shadow:
+    0 0 6px rgba(179, 84, 97, 0.18),
+    inset 0 0 8px rgba(179, 84, 97, 0.08);
+}
+
+/* Camera actively in use */
+#custom-privacy-status.cam-active {
+  color: @nejen_red;
+  border-color: rgba(179, 84, 97, 0.75);
+  background: rgba(179, 84, 97, 0.1);
+
+  text-shadow:
+    0 0 5px rgba(179, 84, 97, 0.55),
+    0 0 14px rgba(179, 84, 97, 0.25);
+
+  box-shadow:
+    0 0 6px rgba(179, 84, 97, 0.22),
+    inset 0 0 8px rgba(179, 84, 97, 0.1);
+}
+
+/* Normal state: hidden and takes no space */
+#custom-privacy-status.privacy-clear {
+  color: transparent;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}

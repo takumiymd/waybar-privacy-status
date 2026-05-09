@@ -1,0 +1,8 @@
+"custom/privacy-status": {
+  "exec": "~/.config/waybar/scripts/privacy-status.py",
+  "return-type": "json",
+  "format": "{}",
+  "interval": 2,
+  "signal": 9,
+  "tooltip": true
+}
