@@ -115,13 +115,15 @@ Add this to your Waybar `style.css`:
   border: 1px solid transparent;
   box-shadow: none;
 
-  padding: 0 8px;
-  margin: 0 4px;
+  padding: 0px 4px;
+  margin: 10px 4px;
+  min-height: 0;
 
-  border-radius: 8px;
+  border-radius: 12px;
 
   font-weight: 700;
   letter-spacing: 2px;
+
 }
 
 /* Mic off / camera off */
